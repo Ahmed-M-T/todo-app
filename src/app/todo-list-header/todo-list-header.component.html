@@ -1,0 +1,10 @@
+<header >
+  <h1 class="font-weight-bolder text-center">Todo </h1>
+         <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="insert your task  "
+          (keyup.enter)="addTodo()" [(ngModel)]="newTodo.title" >
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary font-weight-bolder" type="button" (click)="addTodo()">Add task</button>
+          </div>
+        </div>
+</header>

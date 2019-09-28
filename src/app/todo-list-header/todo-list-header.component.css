@@ -1,0 +1,13 @@
+h1{
+    color:#f38030;
+    
+}
+.btn-outline-secondary {
+    color: #f38030;
+    border-color: #f38030;
+}
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #f38030;
+    border-color: #f38030;
+}

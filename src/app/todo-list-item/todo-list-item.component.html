@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-between mt-1">
+  <label class="checkbox-label">
+    <input type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
+    <span class="checkbox-custom circular"></span>
+</label>
+
+  <label class="h5">{{todo.title}}</label>
+  <button class="btn " (click)="removeTodo(todo)">
+      <i class="material-icons text-danger">
+          delete
+          </i>
+  </button>
+</div>

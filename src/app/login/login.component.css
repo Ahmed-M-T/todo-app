@@ -1,0 +1,35 @@
+.test{
+    background-color: #1E1505 !important;
+   
+    
+}
+h1{
+    color: #DFE363 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+label{
+    color: #DFE363 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.btn{
+    background-color: #DFE363 !important;
+}
+.row{
+    
+}
+.img{
+    background-image: url('/assets/img/3.jpg');
+    background-repeat: no-repeat;
+  
+  background-position: center;
+  background-size: cover;
+    
+
+    
+}
+form{
+    border: 1px solid ;
+    border-color: #DFE363 !important;
+}

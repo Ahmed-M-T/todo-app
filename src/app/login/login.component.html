@@ -1,0 +1,73 @@
+<div class="card ">
+  <div class="row no-gutters test vh-100">
+    <div class="col-md-8 img vh-100">
+      <!--  <img src="assets/img/3.jpg" class="img" alt="...">-->
+    </div>
+    <div class="col-md-4 align-self-center test">
+      <div class="card-body    ">
+
+
+        <form class=" p-2 rounded  " [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+          <h1 class="text-center display-3">Todo app</h1>
+          <div class="form-group">
+            <label for="exampleInputEmail1">User Name :</label>
+            <input type="text" class="form-control" formControlName="name" id="example1" placeholder="Enter User Name">
+            <small class="form-text text-muted"> your User name at least 4 characters</small>
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+
+              <div *ngIf="name.errors.required">
+                Name is required.
+              </div>
+              <div *ngIf="name.errors.minlength">
+                Name must be at least 4 characters long.
+              </div>
+
+              <div *ngIf="name.errors.maxlength">
+                Name must be at most 10 characters long.
+              </div>
+              
+
+            </div>
+            <div class="alert alert-danger" *ngIf="nameState">
+              
+                name is incorrect
+              
+            </div>
+          </div> 
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1"
+                placeholder="Password">
+              <small class="form-text text-muted"> your User password at least 4 characters</small>
+              <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+
+                <div *ngIf="password.errors.required">
+                  password is required.
+                </div>
+                <div *ngIf="password.errors.minlength">
+                  password must be at least 4 characters long.
+                </div>
+  
+                <div *ngIf="password.errors.maxlength">
+                  password must be at most 10 characters long.
+                </div>
+                
+  
+              </div>
+            
+                <div class="alert alert-danger" *ngIf="passwordState">
+                  password is incorrect
+                </div>
+              
+            </div>
+
+            <button type="submit" class="btn btn-block " [disabled]="!profileForm.valid">Submit</button>
+        </form>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
